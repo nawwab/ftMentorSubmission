@@ -1,0 +1,126 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 24px;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+.card {
+  max-width: 365px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0px 16px 16px lightgray;
+}
+
+.card__hero {
+  width: 100%;
+}
+
+.card__content {
+  padding: 24px 16px 24px 16px;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 32px;
+  margin: 0 0 16px 0;
+  font-weight: 900;
+}
+
+.card__desc {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.plan-status {
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--very-pale-blue);
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+.plan-status__icon {
+  margin-right: 16px;
+}
+
+.plan-status__price-tag__title {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.plan-status__price-tag__price {
+  margin: 0;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.plan-status__change-button {
+  margin-left: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.plan-status__change-button:hover {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+.card__proceed-button {
+  padding: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  border: none;
+  background: var(--bright-blue);
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0px 16px 16px lightgray;
+}
+
+.card__proceed-button:hover {
+  background: var(--desaturated-blue);
+}
+
+.card__cancel-button {
+  padding: 4px;
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+.card__cancel-button:hover {
+  color: black;
+}
+
+@media screen and (max-width: 380px) {
+    body {
+      background-image: url("images/pattern-background-mobile.svg");
+    }
+}
