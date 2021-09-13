@@ -29,7 +29,7 @@ Users should be able to:
 ![screenshot](./screenshot.png)
 
 ### Links
-
+- Live Preview: https://codesandbox.io/s/order-summary-card-btqoc or go to my CodeSandbox profile
 - Solution URL: https://www.frontendmentor.io/solutions/vanilla-css-bem-methodology-jIy4n0cVq
 
 ## My process
